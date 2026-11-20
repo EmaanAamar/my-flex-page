@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lost In Books</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image:url(https://images.openai.com/static-rsc-4/aARBfKJ_2AtA_9Y3jEEXa-ShayRkjuNZjyrbmKQIyrMdAewzsNykR0LYXHswN4ZHksPi-FApdiRzw7is7ik9MU60OF9uIBGBbvmFlRJSzHDlw9RCqAGnueFoUdFx1QsYLmud41bDgo1jYbgd2gpn3eAL_EYsUCmEGYgdTUBQHkIWCMizhG26ktMOTScr2NfB?purpose=fullsize) ;background-repeat: no-repeat;
+    background-size: cover;   
+     border: 10px solid;
+    font-family: Georgia, "Times New Roman", serif;
+}
+/* White Main Page */
+
+.page {
+    width: 80%;
+    max-width: 960px;
+    margin: 48px auto 52px;
+    padding: 22px 5.7% 14px;
+    background-image:url("https://png.pngtree.com/background/20250102/original/pngtree-rainbow-unicorn-background-with-clouds-and-stars-pastel-color-sky-picture-image_15560523.jpg");background-repeat: no-repeat; 
+    background-size: cover;
+    
+}
+/* NAVIGATION BAR */
+        nav {
+            max-width: 850px;
+            margin: 0 auto 20px;
+            padding: 15px 25px;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 15px;
+
+            background: rgba(20, 25, 55, 0.35);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            border-radius: 50px;
+            box-shadow: 0 5px 25px rgba(20, 35, 80, 0.15);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            letter-spacing: 1px;
+            padding: 9px 15px;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.25);
+            color: #fff5d9;
+            transform: translateY(-2px);
+        }
+
+        /* MAIN HEADING */
+    
+
+h1 {
+    margin: 12px 0 5px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(36px, 5.8vw, 68px);
+    font-weight: normal;
+    letter-spacing: 5px;
+    line-height: 1.12;
+}
+
+        .subtitle {
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+            text-shadow: 1px 2px 5px #26345e;
+        }
+
+        /* DECORATIVE LINE */
+        .line {
+            width: 90px;
+            height: 2px;
+            background: #fff3d6;
+            margin: 0 auto 22px;
+            border-radius: 10px;
+        }
+
+        /* Paragraph */
+
+.intro {
+    margin: 0 0 16px;
+    text-align: center;
+    font-size: clamp(14px, 1.9vw, 23px);
+    line-height: 1.22;
+}
+
+/* Main Book Image */
+
+.hero {
+    display: block;
+    width: 100%;
+    aspect-ratio: 842 / 382;
+    object-fit: cover;
+    margin: 0 0 17px;
+}
+
+/* Image Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 4%;
+    row-gap: 10px;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.32 / 1;
+    object-fit: cover;
+}
+
+/* Image Captions */
+
+.caption {
+    margin: 4px 0 0;
+    font-size: clamp(12px, 1.55vw, 18px);
+    line-height: 1.15;
+}
+
+/* Mobile Screen */
+
+@media (max-width: 650px) 
+
+    body {
+        border-width: 6px;
+    }
+
+    .page {
+        width: 94%;
+        margin: 20px auto;
+        padding: 14px 5%;
+    }
+
+    nav {
+        width: 100%;
+        height: 45px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    h1 {
+        letter-spacing: 2px;
+    }
+
+    .intro {
+        font-size: 13px;
+    }
+
+    .gallery {
+        column-gap: 3%;
+        row-gap: 8px;
+    }
+
+    .caption {
+        font-size: 10px;
+    }
+    .caption {
+    text-align: center;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<main class="page">
+
+    <!-- Navigation -->
+
+    <nav>
+        <a href="#about"><font size="5">ABOUT ME</font></a>
+        <a href="#work"><font size="5">MY WORK</font></a>
+        <a href="#contact"><font size="5">CONTACT</font></a>
+    </nav>
+
+    <!-- About Section -->
+
+    <section id="about">
+
+       <b><i><h1>LOST IN BOOKS</h1></i></b>
+
+        <p class="intro">
+           <b><u><i><font size="5"> Books are more than just pages and words.
+            They are little worlds, full of dreams, ideas
+            and endless possibilities. From classic novels
+            to modern stories, books have the power
+            to inspire, comfort and transport us to a
+            different place. In every book, we find a piece
+            of ourselves, a new perspective and a story
+            worth remembering.</font></i></u></b>
+        </p>
+
+    </section>
+
+    <!-- Main Image -->
+
+    <section id="work">
+
+        <img
+        class="hero"
+        src="https://images.openai.com/static-rsc-4/YsMB9Bo35kKBWjoiwqrwyPEGbhn4PtGw3giZIaUrIs45ZNJs8_6f-n_1eRQMXuRH6tdAoX1tD91_C03xYqhRfckcIHtoMZrS2xw4JbD__ccZUWU_wRAzd17p-HKA59QG4P31fZIXFcUU9WlxzEpLdyhZRTQRBX8iaCrJ3bSSXI0?purpose=inline"
+        alt="Books and reading">
+
+    </section>
+
+    <!-- Books Gallery -->
+
+    <div class="gallery">
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbLWFDQN4ITjkVD92iPLTcyxzbx0c29HRErmCfLR3Q_A&s=10"
+            width="300" height="300">
+            <p class="caption"><font size="4"><b>Books & Dreams</b></font></p>
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm6tjqTIjui4U3JqL14tjzBu3tGgc_GcAkg5KkkYj9MQ&s=10"
+            width="300" height="300">
+            
+
+            <p class="caption"><font size="4"><b>A Shelf Full of Stories</b></font></p>
+        </div>
+
+        <div>
+           <img src="https://images.openai.com/static-rsc-4/l2vWBbSScVHs4_g7v7MXR24Ionv8xMnSNruJQ7euAumj_sko714SQeawDfu-t1DnwlHAVZnOrQEcY_IxF5n9Li25DOM1KLLSKXLb6CC_Y5S0ruPW9UyX6fYjai1ZtB9shFUKYBO2tjDIuYh1-tmMI5WrQbMgYUTQUCKTzYpAEAyYthmCb3xzKnZshVpFIEbQ?purpose=fullsize" width="300" height="300">
+
+            <p class="caption"><font size="4"><b>Where Magic Blooms</b></font></p>
+        </div>
+
+        <div>
+           <img src="https://images.openai.com/static-rsc-4/-1SHLkJL4r2avsWytkNlAqs6nmL2ZLHzYM05JJs76YC4GqR5J6Jjh8Hq5o0N60fcNLye5fwedhjnKn9UdYDCFrTNTI71AyQ84ZpItdoHyoo9oGhf1l-E2H1Zk3xp9YOGHPytJ8XyXXPBAr4sA-1YhP7wovqDOgHvIpipzs6a0oY-ZegRX2iHazv5JgHZYrJs?purpose=fullsize" width="300" height="300">
+
+            <p class="caption"><font size="4"><b>Little Reader, Big Dreams</b></font></p>
+        </div>
+
+        <div>
+            <img src="https://images.openai.com/static-rsc-4/4muLd-4qbTk7z3pmBBxNl4VIvA2_Hv3AUYArgLECQuOqcgIWJyge8g9g3OQCpyTo092B763APeHzq0AUFMZOMxvwccJgd4DT5skqpCbzXV7M6uCvPNRUJWciKBCG3sbidCsad4-8v4J63yGFrriWXlIHtYmY-ZgTat2MXsXJxr_MqcdDRZg16wDA86MIQMsW?purpose=fullsize" width="300" height="300">
+           
+
+            <p class="caption"><font size="4"><b>A Universe of Stories</b></font></p>
+        </div>
+
+        <div>
+            <img src="https://i.pinimg.com/474x/00/bd/b4/00bdb431f6c9d0f9d20cdad5b78fbccf.jpg" width="300" height="300">
+            <p class="caption"><font size="4"><b>Whispers of the Past</b></font></p>
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>
+
+
+
